@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>The Scala.js Tutorial</title>
+    <!-- React -->
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+  </head>
+  <body>
+    <!-- Include Scala.js compiled code -->
+    <h1 id="title"></h1>
+    <div id="content"></div>
+    <div id="inclass"></div>
+    <div id="react-root"></div>
+    <br>
+    <canvas id="canvas" width="800" height="600"></canvas>
+    <br>
+    <button id="click-me-button" type="button" onclick="addClickedMessage()">
+      Click me!
+    </button>    
+    <script type="text/javascript" src="./target/scala-2.13/root-fastopt/main.js"></script>
+  </body>
+</html>
